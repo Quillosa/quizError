@@ -22,6 +22,8 @@ namespace timer
         int index = 0;
         int score = 0;
 
+        //score
+
         List<String> questions = new List<string>();
         List<String> cA = new List<string>();
         List<String> cB = new List<string>();
@@ -31,7 +33,7 @@ namespace timer
 
         private void StartedQuiz_Load(object sender, EventArgs e)
         {
-            
+            //Timer tick
             timer1.Start();
 
             questions.Add(number++ + " " + "What is Your Name?");
@@ -147,6 +149,7 @@ namespace timer
             {
                 if (isCurrentAnswerCorrect())
                 {
+                    //if correct score +1
                     score++;
                 }
 
